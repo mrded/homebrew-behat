@@ -1,8 +1,5 @@
 require 'formula'
 
-# Documentation: https://github.com/mxcl/homebrew/wiki/Formula-Cookbook
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-
 class Behat < Formula
   homepage 'http://behat.org'
   head "https://github.com/Behat/Behat"
@@ -11,16 +8,16 @@ class Behat < Formula
 
   version "2.4.6"
 
+  depends_on 'composer'
+
   def install
-    bin.install ["bin/behat"]
+    system 'curl -O http://getcomposer.org/composer.phar'
+    system 'php composer.phar install'
+
+    prefix.install Dir['*']
   end
 
   test do
-    # `test do` will create, run in and delete a temporary directory.
-    #
-    # This test will fail and we won't accept that! It's enough to just replace
-    # "false" with the main program this formula installs, but it'd be nice if you
-    # were more thorough. Run the test with `brew test v`.
     system "false"
   end
 end
