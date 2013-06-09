@@ -8,6 +8,7 @@ Behat formulae repo for Homebrew
 * Homebrew
 * Snow Leopard, Lion, Mountain Lion. Untested everywhere else
 * The homebrew `dupes` tap - `brew tap homebrew/dupes`
+* The homebrew `homebrew-php` tap - `brew tap josegonzalez/homebrew-php`
 
 ## Installation
 
