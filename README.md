@@ -8,13 +8,13 @@ Behat formulae repo for Homebrew
 * Homebrew
 * Snow Leopard, Lion, Mountain Lion. Untested everywhere else
 * The homebrew `dupes` tap - `brew tap homebrew/dupes`
-* The homebrew `homebrew-php` tap - `brew tap josegonzalez/homebrew-php`
+* The homebrew `homebrew-php` tap - `brew tap josegonzalez/php`
 
 ## Installation
 
 Run the following in your commandline:
 
-    brew tap mrded/homebrew-behat
+    brew tap mrded/behat
     
 Then, install behat:
 
