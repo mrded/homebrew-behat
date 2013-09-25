@@ -3,10 +3,10 @@ require 'formula'
 class Behat < Formula
   homepage 'http://behat.org'
   head "https://github.com/Behat/Behat"
-  url 'https://github.com/Behat/Behat/archive/3.0.zip'
-  sha1 'c4acdee678cebfb204fe23a975943cdc9a6ab018'
+  url 'https://github.com/Behat/Behat/archive/2.5.zip'
+  sha1 'a90b0e2e613372b4c4883ce07817641a92493cb5'
 
-  version "3.0"
+  version "2.5"
 
   depends_on 'composer'
 
